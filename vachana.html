@@ -24,19 +24,9 @@ canonical: https://gnanasangama.github.io
             <!-- Team Members 02 -->
             <div class="team-members mtb-50">
               <div class="row">
-                <div class="col-sm-6 col-md-3">
 		{% for post in site.posts %}
-			<div class="blog-block post-content-area">
-				{% if post.img %}	  
-					<img src="{{ post.img }}" alt="{{ post.title }} image">
-				{% endif %}	  
-				<div class="blog-post">
-					<h3><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3>
-					<p>{{ post.excerpt }}</p>
-					<a class="btn btn-common" href="{{ BASE_PATH }}{{ post.url }}">Read More</a>
-				</div>
-			</div>
-			<div class="mb-60"></div>
+		{% if post.category == vachana %}
+                <div class="col-sm-6 col-md-3">
                   <!-- Team Item Starts -->
                   <div class="team-item">
                     <figure class="team-profile">
@@ -56,8 +46,9 @@ canonical: https://gnanasangama.github.io
                     </div>
                   </div>
                   <!-- Team Item Ends -->
-		{% endfor %}
                 </div>
+		{% endif %}
+		{% endfor %}
                 <div class="col-sm-6 col-md-3">
                   <!-- Team Item Starts -->
                   <div class="team-item">
