@@ -5,7 +5,7 @@ category: vachana
 url: basavanna
 description: ಬಸವಣ್ಣನವರ ವಚನ
 title: ಬಸವಣ್ಣನವರ ವಚನ
-person: ಬಸವಣ್ಣನ
+person: ಬಸವಣ್ಣ
 cont: ವಚನ
 contents:
   - id: 01
