@@ -3,7 +3,8 @@ layout: category1
 img: http://3.bp.blogspot.com/-d7PhYlPdN48/ULG25YIk_ZI/AAAAAAAAAAg/JmCv4np4fnY/s1600/Basaveshwara.jpg
 category: vachana
 url: basavanna
-description: ಬಸವಣ್ಣನವರ ವಚನ
+description: >-
+  ಬಸವಣ್ಣ (ಬಸವ,ಬಸವೇಶ್ವರ ) ಭಾರತದ 12 ನೇ ಶತಮಾನದ ತತ್ವಜ್ಞಾನಿ ಮತ್ತು ಸಾಮಾಜಿಕ ಸುಧಾರಕರಾಗಿದ್ದರು. ಶಿವ ಕೇಂದ್ರೀಕೃತ ಭಕ್ತಿ ಚಳುವಳಿಯಲ್ಲಿ ಕನ್ನಡ ಕವಿಯಾಗಿದ್ದರು. ವಚನಗಳ ಮೂಲಕ ಸಾಮಾಜಿಕ ಅರಿವು ಹರಡಿದರು. ಸಾಮಾಜಿಕ ತಾರತಮ್ಯ, ಮೂಢನಂಬಿಕೆಗಳು ನಿರಾಕರಿಸಿದರು.
 title: ಬಸವಣ್ಣನವರ ವಚನ
 person: ಬಸವಣ್ಣ
 cont: ವಚನ
