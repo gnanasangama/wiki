@@ -27,9 +27,11 @@ layout: index
                   <li class="nav-item">
                     <a class="nav-link active" data-toggle="tab" href="#C{{ content.id }}" role="tab">{{ page.cont }}</a>
                   </li>
+                    {% if content.m %}
                   <li class="nav-item">
                     <a class="nav-link" data-toggle="tab" href="#M{{ content.id }}" role="tab">ಅರ್ಥ</a>
                   </li>
+                    {% endif %}
                 </ul>
 
                 <!-- Tab panes -->
@@ -37,9 +39,11 @@ layout: index
                   <div class="tab-pane active" id="C{{ content.id }}" role="tabpanel">
                     <p>{{ content.c }}</p>
                   </div>
+                    {% if content.m %}
                   <div class="tab-pane" id="M{{ content.id }}" role="tabpanel">
                     <p>{{ content.m }}</p>
                   </div>
+                    {% endif %}
                 </div>
               </div>
             </div>
