@@ -26,25 +26,25 @@ canonical: https://gnanasangama.github.io
 					<div class="row">
 						{% for post in site.posts %}
 						{% if post.category == "vachana" %}
-							<a href="https://gnanasangama.github.io/{{ post.title }}">
-								<div class="col-sm-6 col-md-3">
-									<div class="team-item">
-										<figure class="team-profile">
+							<div class="col-sm-6 col-md-3">
+								<div class="team-item">
+									<figure class="team-profile">
+										<a href="https://gnanasangama.github.io/{{ post.title }}">
 											<img src="{{ post.img }}" alt="{{ post.person }}">
-											<figcaption class="our-team">
-												<div class="details">
-													<p class="content-white">{{ post.person }}</p>
-													<hr class="small-divider border-white">
-													<p class="content-white">{{ post.description }}</p>
-												</div>
-											</figcaption>
-										</figure>
-										<div class="info">
-											<h2>{{ post.person }}</h2>
-										</div>
+										</a>
+										<figcaption class="our-team">
+											<div class="details">
+												<p class="content-white">{{ post.person }}</p>
+												<hr class="small-divider border-white">
+												<p class="content-white">{{ post.description }}</p>
+											</div>
+										</figcaption>
+									</figure>
+									<div class="info">
+										<a href="https://gnanasangama.github.io/{{ post.title }}"><h2>{{ post.person }}</h2></a>
 									</div>
 								</div>
-							</a>
+							</div>
 						{% endif %}
 						{% endfor %}
 					</div>
