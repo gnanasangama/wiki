@@ -4,6 +4,7 @@ img: http://3.bp.blogspot.com/-d7PhYlPdN48/ULG25YIk_ZI/AAAAAAAAAAg/JmCv4np4fnY/s
 category: vachana
 description: ಬಸವಣ್ಣನವರ ವಚನ
 title: ಬಸವಣ್ಣನವರ ವಚನ
+person: ಬಸವಣ್ಣನ
 cont: ವಚನ
 contents:
   - id: 01
