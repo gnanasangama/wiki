@@ -1,5 +1,5 @@
 ---
-layout: category1
+layout: todays-special
 title: ಇಂದಿನ ವಿಷೇಶ
 geethe: >- 
      ಸೇವೆಯೆಂಬ ಯಜ್ಞದಲ್ಲಿ ಸಮಿಧೆಯಂಥೆ ಉರಿಯುವಾ<br>
