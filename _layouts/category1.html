@@ -4,7 +4,26 @@ layout: index
 {% include JB/setup %}
     <!-- Content Area Start -->
 <div id="content" style="padding-top:10vh;">
-      <!-- tabs-accordions -->
+
+      <div class="header-style-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+              <div class="hero-content-v2">
+                <h3><strong>{{ page.person }}</strong></h3>
+                <p>{{ content }}</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <figure>
+                <img src="{{ page.img }}" alt="">
+              </figure>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
       <div class="tabs-accordions">
         <div class="container">
           <div class="row">
