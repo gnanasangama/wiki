@@ -1,0 +1,55 @@
+---
+layout: index
+---
+{% include JB/setup %}
+    <!-- Content Area Start -->
+<div id="content" style="padding-top:10vh;">
+      <!-- tabs-accordions -->
+      <div class="tabs-accordions">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="page-header-title">
+                <h2 class="heading-title text-center">{{ page.title }}</h2>
+              </div>
+            </div>
+          </div>
+          <div class="sub-title">
+            <span></span>
+          </div>
+          <div class="row">
+            <!-- tabs 1 -->
+            {% for content in page.contents %}
+            <div class="col-md-4 col-sm-6">
+              <div id="round-tab">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#C{{ content.id }}" role="tab">{{ page.cont }}</a>
+                  </li>
+                    {% if content.m %}
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#M{{ content.id }}" role="tab">ಅರ್ಥ</a>
+                  </li>
+                    {% endif %}
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane active" id="C{{ content.id }}" role="tabpanel">
+                    <p>{{ content.c }}</p>
+                  </div>
+                    {% if content.m %}
+                  <div class="tab-pane" id="M{{ content.id }}" role="tabpanel">
+                    <p>{{ content.m }}</p>
+                  </div>
+                    {% endif %}
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+              </div>
+            </div>
+      </div>
+      <!-- tabs-accordions -->
+    </div>

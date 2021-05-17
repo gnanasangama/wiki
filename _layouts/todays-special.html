@@ -1,0 +1,55 @@
+---
+layout: index
+---
+{% include JB/setup %}
+    <!-- Content Area Start -->
+<div id="content" style="padding-top:10vh;">
+      <!-- tabs-accordions -->
+      <div class="tabs-accordions">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="page-header-title">
+                <h2 class="heading-title text-center">{{ page.title }}</h2>
+              </div>
+            </div>
+          </div>
+          <div class="sub-title">
+            <span></span>
+          </div>
+          <div class="row">
+            <!-- tabs 1 -->
+            <div class="col-md-6 col-sm-6">
+              <div id="round-tab">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#01" role="tab">ಗೀತೆ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#02" role="tab">ಅಮೃತವಚನ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#03" role="tab">ಶ್ಲೋಕ</a>
+                  </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane active" id="01" role="tabpanel">
+                    <p>{{ page.geethe }}</p>
+                  </div>
+                  <div class="tab-pane" id="02" role="tabpanel">
+                    <p>{{ page.amruthavachana }}</p>
+                  </div>
+                  <div class="tab-pane" id="03" role="tabpanel">
+                    <p>{{ page.shloka }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+              </div>
+            </div>
+      </div>
+      <!-- tabs-accordions -->
+    </div>
