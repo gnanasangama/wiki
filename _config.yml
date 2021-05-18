@@ -26,18 +26,18 @@ tagline:
 author : 
   name : ಜ್ಞಾನ ಸಂಗಮ
   site: https://gnanasangama.github.io
-  description : I&#39;m a web master interested in communication applied to web marketing.
-  image : social-image.png
-  email : lantoniotrento@gmail.com
-  github : antoniotrento
-  twitter : lantoniotrento
-  facebook: lantoniotrento
-  linkedin: antoniotrento
-  instagram: lantoniotrento
-  pinterest: antoniotrento
+  description : 
+  image : 
+  email : 
+  github : 
+  twitter : 
+  facebook: 
+  linkedin: 
+  instagram: 
+  pinterest: 
   feedburner : 
 
-twitter_username: lantoniotrento
+twitter_username: 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
 # Most places will/should use BASE_PATH to make the urls
@@ -121,7 +121,7 @@ JB :
   analytics :
     provider : google
     google :
-        tracking_id : 
+        tracking_id : G-01EVY9293Y
     getclicky :
       site_id :
     mixpanel :
