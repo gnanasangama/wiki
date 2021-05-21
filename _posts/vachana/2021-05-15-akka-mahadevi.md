@@ -1,6 +1,5 @@
 ---
 layout: category1
-img: https://magarticles.magzter.com/articles/15177/482331/5f17d1761b13b/Akka-Mahadevi.jpg
 category: vachana
 url: akka-mahadevi
 description: >-
