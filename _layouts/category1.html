@@ -4,7 +4,7 @@ layout: index
 {% include JB/setup %}
     <!-- Content Area Start -->
 <div id="content" style="padding-top:10vh;">
-
+{% if page.person %}
       <div class="header-style-2">
         <div class="container">
           <div class="row">
@@ -16,13 +16,14 @@ layout: index
             </div>
             <div class="col-xs-12 col-sm-6">
               <figure>
-                <img src="{{ page.img }}" alt="">
+                <img src="{{ BASE_PATH }}/assets/images/{{ post.url }}.jpg" alt="">
               </figure>
             </div>
 
           </div>
         </div>
       </div>
+{% endif %}
 
       <div class="tabs-accordions">
         <div class="container">

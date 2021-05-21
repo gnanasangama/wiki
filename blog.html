@@ -13,6 +13,7 @@ canonical: https://gnanasangama.github.io/blog
 
 
 {% for post in site.posts %}
+{% if post.category == "vachana" %}
         <div class="col-sm-12 col-md-6">
           <div class="blog-block">
      {% if post.img %}    
@@ -26,5 +27,6 @@ canonical: https://gnanasangama.github.io/blog
           </div>
           <div class="mb-60"></div>
         </div>
+{% endif %}
 {% endfor %}
 
