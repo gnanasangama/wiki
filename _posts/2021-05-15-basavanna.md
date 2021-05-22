@@ -1,8 +1,7 @@
 ---
 layout: post
 category: blog
-url: basavanna
-img: true
+img: basavanna
 tagline: >-
   ಬಸವಣ್ಣ (ಬಸವ,ಬಸವೇಶ್ವರ ) ಭಾರತದ 12 ನೇ ಶತಮಾನದ ತತ್ವಜ್ಞಾನಿ ಮತ್ತು ಸಾಮಾಜಿಕ ಸುಧಾರಕರಾಗಿದ್ದರು.
 title: ಜಗದ್ಗುರು ಬಸವಣ್ಣ
