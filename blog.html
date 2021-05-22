@@ -13,7 +13,7 @@ canonical: https://gnanasangama.github.io/blog
 
 
 {% for post in site.posts %}
-{% if post.category == "blog" %}
+{% if post.category %}
         <div class="col-sm-12 col-md-6">
           <div class="blog-block">
      {% if post.img %}    
