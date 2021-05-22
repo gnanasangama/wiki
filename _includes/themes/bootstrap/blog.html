@@ -3,12 +3,14 @@
     <div class="mb-60"></div>
     <div class="container">
       <div class="row">
+        <div class="col-md-12">
+          <div class="page-header-title">
+            <h2 class="heading-title text-center">ಬ್ಲಾಗ್ - ಜ್ಞಾನ ಸಂಗಮ</h2>
+          </div>
+        </div>
         <div class="row col-sm-12 col-md-9">
 
-           {{ content }}     
-
-            {% include JB/comments %}
-          
+           {{ content }}               
 
         </div>
 
@@ -17,11 +19,13 @@
             <!-- <div class="widget-title">
               <h4>Sponsor</h4>
             </div> -->
-            {% include ads-block.html %}
-          <div>
-        </div>          
+            {% include ads-block.html %}    
+            </div>   
       </div>
      </div>
+     
+            {% include JB/comments %}
+   </div>
    </section>
           
 
