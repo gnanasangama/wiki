@@ -1,7 +1,7 @@
           <div class="blog-block about-sidebar-widget">
             <img src="{{ BASE_PATH }}/assets/images/{{ site.author.image }}">
-            <h4><a href="{{ site.author.site }}">{{ site.author.name }}</a></h4>
-            <p>{{ site.author.description }}</p>
+            <h4><a href="{{ site.author.site }}">{{ page.author }}</a></h4>
+            <p>{{ page.author-details }}</p>
             {% include social-block.html %}
           </div>
 
