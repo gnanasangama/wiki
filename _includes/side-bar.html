@@ -1,5 +1,5 @@
           <div class="blog-block about-sidebar-widget">
-            <img src="{{ BASE_PATH }}/assets/images/{{ site.author.image }}">
+            {% if page.author-img %}<img src="{{ BASE_PATH }}/assets/images/author/{{ site.author-img }}.jpg">{% endif %}
             <h4><a href="{{ site.author.site }}">{{ page.author }}</a></h4>
             <p>{{ page.author-details }}</p>
             {% include social-block.html %}

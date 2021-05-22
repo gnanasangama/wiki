@@ -162,21 +162,23 @@ canonical: https://heliumjk.github.io
             <div class="mb-60"></div>
   
        <div class="container">
-        <h4 class="sub-title space-left">Mobile scroll blog carousel</h4>
+        <h4 class="sub-title space-left"><b>ಬ್ಲಾಗ್ - ಜ್ಞಾನ ಸಂಗಮ</b></h4>
       </div>
 
       <section id="blog">
         <div class="container">                              
           <div id="posts-carousel" class="owl-carousel">
-           {% for post in site.posts %}     
+           {% for post in site.posts %}
+            {% if post.category == "blog" %}     
             <div class="blog-block blog block carousel-post">
              {% if post.img %}           
-              <img src="{{ BASE_PATH }}/assets/images/{{ post.img }}" alt="">
+            <img src="{{ BASE_PATH }}/assets/images/{{ post.url }}.jpg" alt="{{ post.title }} image">
              {% endif %}           
               <h5>{{ post.title }}</h5>
               <p>{{ post.excerpt }}</p>
               <a href="{{ BASE_PATH }}{{ post.url }}">Full Article <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
             </div>
+          {% endif %}
            {% endfor %}     
           </div>              
         </div>
