@@ -22,7 +22,7 @@ defaults:
       permalink: /:year/:month/:day/:title
   # content
   - scope:
-      path: "_posts"
+      path: "_posts/vishaya"
       type: posts
     values:
       permalink: /:title
