@@ -1,6 +1,6 @@
 # This is the default format.
 # For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /:categories/:year/:month/:day/:title
+# permalink: /:categories/:year/:month/:day/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: null
@@ -12,6 +12,20 @@ baseurl: "https://gnanasangama.github.io"
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
+
+defaults:
+  # blog
+  - scope:
+      path: "_posts/blog"
+      type: posts
+    values:
+      permalink: /:year/:month/:day/:title
+  # content
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      permalink: /:categories/:title
 
 #Google Ad Words Data from scripts code (using Google responsive options) and ad client
 data-ad-slot: 
