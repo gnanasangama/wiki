@@ -1,7 +1,6 @@
 ---
 layout: category2
 title: ಗೀತೆ
-permalink: /geethe
 contents:
   - id: 10
     t: >-
