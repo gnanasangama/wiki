@@ -19,8 +19,8 @@ layout: index
           </div>
           <!-- accordions -->
           <div class="row">
-			{% for post in site.vishaya.amruthavachana %}
-			<!-- {% if post.category == "amruthavachana" %} -->
+			{% for post in site.vishaya %}
+			{% if post.category == "amruthavachana" %}
             <div class="col-sm-6">
               <div class="panel-group tabbed">
                 <div class="panel">
@@ -39,7 +39,7 @@ layout: index
                 </div>
               </div>
             </div>
-			<!-- {% endif %} -->
+			{% endif %}
 			{% endfor %}
           </div>
             </div>

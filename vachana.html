@@ -24,8 +24,8 @@ canonical: https://gnanasangama.github.io
 				<!-- Team Members 02 -->
 				<div class="team-members mtb-50">
 					<div class="row">
-						{% for post in site.vishaya.vachana %}
-						<!-- {% if post.category == "vachana" %} -->
+						{% for post in site.vishaya %}
+						{% if post.category == "vachana" %}
 							<div class="col-sm-6 col-md-3">
 								<div class="team-item">
 									<figure class="team-profile">
@@ -43,7 +43,7 @@ canonical: https://gnanasangama.github.io
 									</a>
 								</div>
 							</div>
-						<!-- {% endif %} -->
+						{% endif %}
 						{% endfor %}
 					</div>
 				</div>

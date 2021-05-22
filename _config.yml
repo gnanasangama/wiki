@@ -15,7 +15,7 @@ baseurl: "https://gnanasangama.github.io"
 collections:
    vishaya:
      output: true
-     permalink: /:title/
+     permalink: /:path/
 
 defaults:
   # blog
