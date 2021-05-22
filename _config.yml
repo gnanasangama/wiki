@@ -19,7 +19,7 @@ defaults:
       path: "_posts/vishaya"
       type: posts
     values:
-      permalink: /:categories/:title
+      permalink: pretty
   # blog
   - scope:
       path: "_posts/blog"
