@@ -12,14 +12,12 @@ baseurl: "https://gnanasangama.github.io"
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
+collections:
+   vishaya:
+     output: true
+     permalink: /:path/
 
 defaults:
-  # content
-  - scope:
-      path: "_posts/vishaya"
-      type: posts
-    values:
-      permalink: pretty
   # blog
   - scope:
       path: "_posts/blog"
