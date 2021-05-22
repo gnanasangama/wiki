@@ -14,18 +14,18 @@ baseurl: "https://gnanasangama.github.io"
 #
 
 defaults:
+  # content
+  - scope:
+      path: "_posts/vishaya"
+      type: posts
+    values:
+      permalink: /:categories/:title
   # blog
   - scope:
       path: "_posts/blog"
       type: posts
     values:
       permalink: /:year/:month/:day/:title
-  # content
-  - scope:
-      path: "_posts/vishaya"
-      type: posts
-    values:
-      permalink: /:title
 
 #Google Ad Words Data from scripts code (using Google responsive options) and ad client
 data-ad-slot: 
