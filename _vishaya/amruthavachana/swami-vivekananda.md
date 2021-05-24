@@ -1,7 +1,7 @@
 ---
 layout: category2
 title: ಸ್ವಾಮಿ ವಿವೇಕಾನಂದ
-id: swami-vivekananda
+pid: swami-vivekananda
 category: amruthavachana
 contents:
   - c: >- 
