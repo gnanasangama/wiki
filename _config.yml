@@ -115,7 +115,8 @@ JB :
   comments :
     provider : disqus
     disqus : 
-      short_name : gnanasangama
+      short_name : 
+#       gnanasangama
     #livefyre :
     #  site_id : 
     #intensedebate :
