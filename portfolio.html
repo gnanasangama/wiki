@@ -26,6 +26,46 @@ canonical: https://gnanasangama.github.io
       <section id="portfolio" class="section">
         <!-- Container Starts -->
         <div class="container">
+            <div class="tabs-accordions">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="page-header-title">
+		      <h2 class="heading-title text-center"><b>ಗೀತೆ</b></h2>
+              </div>
+            </div>
+          </div>
+          <div class="sub-title">
+            <span></span>
+          </div>
+          <!-- accordions -->
+          <div class="row">
+			{% for post in site.vishaya %}
+			{% if post.category == "geethe" %}
+            <div class="col-sm-6">
+              <div class="panel-group tabbed">
+                <div class="panel">
+                  <div class="panel-heading">
+                    <a class="panel-title collapsed" data-toggle="collapse" href="#{{ post.category }}">{{ post.title }}</a>
+                  </div>
+                  <div id="{{ post.category }}" class="panel-collapse collapse">
+                    <div class="panel-body text-gray">
+                    	<ul>
+            		{% for content in post.contents %}
+                      <li>{{ content.c }}</li><hr>
+            		{% endfor %}
+            	        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+			{% endif %}
+			{% endfor %}
+          </div>
+            </div>
+      </div>
+      <!-- tabs-accordions -->
           <div class="sub-title">
             <span>Portfolio Style #1</span>
           </div>
@@ -36,16 +76,16 @@ canonical: https://gnanasangama.github.io
                 <a class="filter active btn btn-common" data-filter="all">
                   All 
                 </a>
-                <a class="filter btn btn-common" data-filter=".branding">
+                <a class="filter btn btn-common" data-filter=".desha">
                   Branding 
                 </a>
-                <a class="filter btn btn-common" data-filter=".marketing">
+                <a class="filter btn btn-common" data-filter=".bhavageethe">
                   Marketing
                 </a>
-                <a class="filter btn btn-common" data-filter=".planning">
+                <a class="filter btn btn-common" data-filter=".sangha">
                   Planning 
                 </a>
-                <a class="filter btn btn-common" data-filter=".research">
+                <a class="filter btn btn-common" data-filter=".rakshabandhana">
                   Research 
                 </a>
               </div>
@@ -198,281 +238,3 @@ canonical: https://gnanasangama.github.io
         <!-- Container Ends -->
       </section>
       <!-- Portfolio Section Ends -->
-
-      <div class="mb-60"></div>
-
-      <!-- portfolio section 4col -->
-      <section id="portfolio">
-        <div class="container">
-          <div class="sub-title">
-            <span>Portfolio Style #2 & Columns 4</span>
-          </div>
-          <ul class="row portfolio list-unstyled" id="grid">
-            <li class="col-md-3 col-sm-6 project">
-              <figure>
-                <div class="hovereffect">
-                  <img src="{{ BASE_PATH }}/assets/images/portfolio/img-01.jpg" alt="">
-                  <div class="overlay">
-                    <div class="iocns">
-                      <a class="left-link" href="#"><i class="fa fa-link"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </figure>
-            </li>
-
-            <li class="col-md-3 col-sm-6 project">
-              <figure>
-                <div class="hovereffect">
-                  <img src="{{ BASE_PATH }}/assets/images/portfolio/img-02.jpg" alt="">
-                  <div class="overlay">
-                    <div class="iocns">
-                      <a class="left-link" href="#"><i class="fa fa-plus"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </figure>
-            </li>
-
-            <li class="col-md-3 col-sm-6 project">
-              <figure>
-                <div class="hovereffect">
-                  <img src="{{ BASE_PATH }}/assets/images/portfolio/img-03.jpg" alt="">
-                  <div class="overlay">
-                    <div class="iocns">
-                      <a class="left-link" href="#"><i class="fa fa-plus"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </figure>
-            </li>
-
-            <li class="col-md-3 col-sm-6 project">
-              <figure>
-                <div class="hovereffect">
-                  <img src="{{ BASE_PATH }}/assets/images/portfolio/img-01.jpg" alt="">
-                  <div class="overlay">
-                    <div class="iocns">
-                      <a class="left-link" href="#"><i class="fa fa-plus"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </figure>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- End portfolio section 4col -->
-
-      <div class="mb-60"></div>
-
-      <!-- portfolio section 3col -->
-      <section id="portfolio">
-        <div class="container">
-          <div class="sub-title">
-            <span>Portfolio Style #2 & Columns 3</span>
-          </div>
-          <ul class="row portfolio list-unstyled" id="grid">
-            <li class="col-xs-6 col-md-4 project">
-              <figure>
-                <div class="hovereffect">
-                  <img src="{{ BASE_PATH }}/assets/images/portfolio/img-01.jpg" alt="">
-                  <div class="overlay">
-                    <div class="iocns">
-                      <a class="left-link" href="#"><i class="fa fa-plus"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </figure>
-            </li>
-
-            <li class="col-xs-6 col-md-4 project">
-              <figure>
-                <div class="hovereffect">
-                  <img src="{{ BASE_PATH }}/assets/images/portfolio/img-02.jpg" alt="">
-                  <div class="overlay">
-                    <div class="iocns">
-                      <a class="left-link" href="#"><i class="fa fa-plus"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </figure>
-            </li>
-
-            <li class="col-xs-6 col-md-4 project">
-              <figure>
-                <div class="hovereffect">
-                  <img src="{{ BASE_PATH }}/assets/images/portfolio/img-05.jpg" alt="">
-                  <div class="overlay">
-                    <div class="iocns">
-                      <a class="left-link" href="#"><i class="fa fa-plus"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </figure>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- End portfolio section 3col -->
-
-      <div class="mb-60"></div>
-
-      <!-- portfolio section 4col -->
-      <section id="portfolio">
-        <div class="container">
-          <div class="sub-title">
-            <span>Portfolio Style #3 & Columns 4</span>
-          </div>
-          <ul class="row portfolio list-unstyled" id="grid">
-            <li class="col-md-3 col-sm-6 project">
-              <figure>
-                <div class="hovereffect">
-                  <img src="{{ BASE_PATH }}/assets/images/portfolio/img-01.jpg" alt="">
-                  <div class="overlay">
-                    <div class="icons-link">
-                      <a class="left-link" href="#"><i class="fa fa-link"></i></a>
-                      <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </figure>
-              <div class="portfolio block">
-                <h5>Quarterly Musashino </h5>
-                <p class="project-description">web develpment, design</p>
-              </div>
-            </li>
-            <!-- project -->
-
-            <li class="col-md-3 col-sm-6 project">
-              <figure>
-                <div class="hovereffect">
-                  <img src="{{ BASE_PATH }}/assets/images/portfolio/img-02.jpg" alt="">
-                  <div class="overlay">
-                    <div class="icons-link">
-                      <a class="left-link" href="#"><i class="fa fa-link"></i></a>
-                      <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </figure>
-              <div class="portfolio block">
-                <h5>Shitamachi Rocket</h5>
-                <p class="project-description">web develpment, design</p>
-              </div>
-            </li>
-
-            <li class="col-md-3 col-sm-6 project">
-              <figure>
-                <div class="hovereffect">
-                  <img src="{{ BASE_PATH }}/assets/images/portfolio/img-03.jpg" alt="">
-                  <div class="overlay">
-                    <div class="icons-link">
-                      <a class="left-link" href="#"><i class="fa fa-link"></i></a>
-                      <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </figure>
-              <div class="portfolio block">
-                <h5>Majesty express</h5>
-                <p class="project-description">web develpment, design</p>
-              </div>
-            </li>
-            <!-- project -->
-
-            <li class="col-md-3 col-sm-6 project">
-              <figure>
-                <div class="hovereffect">
-                  <img src="{{ BASE_PATH }}/assets/images/portfolio/img-05.jpg" alt="">
-                  <div class="overlay">
-                    <div class="icons-link">
-                      <a class="left-link" href="#"><i class="fa fa-link"></i></a>
-                      <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </figure>
-              <div class="portfolio block">
-                <h5>Town winter 2017</h5>
-                <p class="project-description">web develpment, design</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- End portfolio section 4col -->
-
-      <div class="mb-60"></div>
-
-      <!-- portfolio section 3col -->
-      <section id="portfolio">
-        <div class="container">
-          <div class="sub-title">
-            <span>Portfolio Style #3 & Columns 3</span>
-          </div>
-          <ul class="row portfolio list-unstyled" id="grid">
-            <li class="col-xs-6 col-md-4 project">
-              <figure>
-                <div class="hovereffect">
-                  <img src="{{ BASE_PATH }}/assets/images/portfolio/img-03.jpg" alt="">
-                  <div class="overlay">
-                    <div class="icons-link">
-                      <a class="left-link" href="#"><i class="fa fa-link"></i></a>
-                      <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </figure>
-              <div class="portfolio block">
-                <h5>Town winter 2017</h5>
-                <p class="project-description">web develpment, design</p>
-              </div>
-            </li>
-            <!-- project -->
-
-            <li class="col-xs-6 col-md-4 project">
-              <figure>
-                <div class="hovereffect">
-                  <img src="{{ BASE_PATH }}/assets/images/portfolio/img-05.jpg" alt="">
-                  <div class="overlay">
-                    <div class="icons-link">
-                      <a class="left-link" href="#"><i class="fa fa-link"></i></a>
-                      <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </figure>
-              <div class="portfolio block">
-                <h5>Quarterly Musashino </h5>
-                <p class="project-description">web develpment, design</p>
-              </div>
-            </li>
-            <!-- project -->
-
-            <li class="col-xs-6 col-md-4 project">
-              <figure>
-                <div class="hovereffect">
-                  <img src="{{ BASE_PATH }}/assets/images/portfolio/img-01.jpg" alt="">
-                  <div class="overlay">
-                    <div class="icons-link">
-                      <a class="left-link" href="#"><i class="fa fa-link"></i></a>
-                      <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </figure>
-              <div class="portfolio block">
-                <h5>Majesty express</h5>
-                <p class="project-description">web develpment, design</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- End portfolio section 3col -->
-
-    </div>
-    <!-- Content Area End -->
-    <div class="text-center">Love this UI Kit? Get more Free and Premium <a href="https://uideck.com/products/category/ui-kits/">Bootstrap UI Kits</a> </div>
-
