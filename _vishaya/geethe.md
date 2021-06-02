@@ -1,6 +1,7 @@
 ---
 layout: category2
 title: ಗೀತೆ
+category: geethe
 contents:
   - id: 10
     t: >-
