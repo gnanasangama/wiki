@@ -12,22 +12,21 @@ canonical: https://gnanasangama.github.io
 ---
 {% include JB/setup %}
     <!-- Content Area Start -->
-    <div id="content">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="page-header-title">
-              <h2 class="heading-title text-center">ಗೀತೆ</h2>
-            </div>
-          </div>
+<div id="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="page-header-title">
+          <h2 class="heading-title text-center">ಗೀತೆ</h2>
         </div>
       </div>
-      <!-- Portfolio Section -->
-      <section id="portfolio" class="section">
-        <!-- Container Starts -->
-        <div class="container">
-		
-		<div class="tabs-accordions">
+    </div>
+  </div>
+<!-- Portfolio Section -->
+  <section id="portfolio" class="section">
+    <!-- Language Container Starts -->
+    <div class="container">
+      <div class="tabs-accordions">
         <div class="container">
           <div class="row">
             <!-- tabs 1 -->
@@ -47,221 +46,166 @@ canonical: https://gnanasangama.github.io
                 <div class="tab-content">
                   <div class="tab-pane active" id="kannada" role="tabpanel">
                     <p>Kannada</p>
-                  </div>
-                  <div class="tab-pane" id="hindi" role="tabpanel">
-                    <p>Hindi</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-              </div>
-            </div>
+                    <div class="sub-title">
+        <span>Portfolio Style #1</span>
       </div>
-      <!-- tabs-accordions -->
-		
-		
-            <div class="tabs-accordions">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="page-header-title">
-		      <h2 class="heading-title text-center"><b>ಗೀತೆ</b></h2>
-              </div>
-            </div>
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Portfolio Controller/Buttons -->
+          <div class="controls text-center wow fadeInUpQuick" data-wow-delay=".6s">
+            <a class="filter active btn btn-common" data-filter="all">
+              All 
+            </a>
+            <a class="filter btn btn-common" data-filter=".desha">
+              Branding 
+            </a>
+            <a class="filter btn btn-common" data-filter=".bhavageethe">
+              Marketing
+            </a>
+            <a class="filter btn btn-common" data-filter=".sangha">
+              Planning 
+            </a>
+            <a class="filter btn btn-common" data-filter=".rakshabandhana">
+              Research 
+            </a>
           </div>
-          <div class="sub-title">
-            <span></span>
-          </div>
-          <!-- accordions -->
-          <div class="row">
-			{% for post in site.vishaya %}
-			{% if post.category == "geethe" %}
-            <div class="col-sm-6">
-              <div class="panel-group tabbed">
-                <div class="panel">
-                  <div class="panel-heading">
-                    <a class="panel-title collapsed" data-toggle="collapse" href="#{{ post.category }}">{{ post.title }}</a>
-                  </div>
-                  <div id="{{ post.category }}" class="panel-collapse collapse">
-                    <div class="panel-body text-gray">
-                    	<ul>
-            		{% for content in post.contents %}
-                      <li>{{ content.c }}</li><hr>
-            		{% endfor %}
-            	        </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-			{% endif %}
-			{% endfor %}
-          </div>
-            </div>
-      </div>
-      <!-- tabs-accordions -->
-          <div class="sub-title">
-            <span>Portfolio Style #1</span>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <!-- Portfolio Controller/Buttons -->
-              <div class="controls text-center wow fadeInUpQuick" data-wow-delay=".6s">
-                <a class="filter active btn btn-common" data-filter="all">
-                  All 
-                </a>
-                <a class="filter btn btn-common" data-filter=".desha">
-                  Branding 
-                </a>
-                <a class="filter btn btn-common" data-filter=".bhavageethe">
-                  Marketing
-                </a>
-                <a class="filter btn btn-common" data-filter=".sangha">
-                  Planning 
-                </a>
-                <a class="filter btn btn-common" data-filter=".rakshabandhana">
-                  Research 
-                </a>
-              </div>
-              <!-- Portfolio Controller/Buttons Ends-->
-            </div>
+          <!-- Portfolio Controller/Buttons Ends-->
+        </div>
 
-            <!-- Portfolio Recent Projects -->
-            <div id="portfolio" class="row wow fadeInUpQuick" data-wow-delay="0.8s">
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix marketing planning">
-                <div class="portfolio-item">
-                  <div class="portfolio-img">
-                    <img src="{{ BASE_PATH }}/assets/images/portfolio/img1.jpg" alt="" />
-                  </div>
-                  <div class="portfoli-content">
-                    <div class="sup-desc-wrap">
-                      <div class="sup-desc-inner">
-                        <div class="sup-link">
-                          <a class="left-link" href="#"><i class="fa fa-link"></i></a>
-                          <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
-                        </div>
-                        <div class="sup-meta-wrap">
-                          <a class="sup-title" href="#">
-                            <h4>TITLE HERE</h4>
-                          </a>
-                          <p class="sup-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente vel quisquam.</p>
-                        </div>
-                      </div>
+        <!-- Portfolio Recent Projects -->
+        <div id="portfolio" class="row wow fadeInUpQuick" data-wow-delay="0.8s">
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix marketing planning">
+            <div class="portfolio-item">
+              <div class="portfolio-img">
+                <img src="{{ BASE_PATH }}/assets/images/portfolio/img1.jpg" alt="" />
+              </div>
+              <div class="portfoli-content">
+                <div class="sup-desc-wrap">
+                  <div class="sup-desc-inner">
+                    <div class="sup-link">
+                      <a class="left-link" href="#"><i class="fa fa-link"></i></a>
+                      <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
+                    </div>
+                    <div class="sup-meta-wrap">
+                      <a class="sup-title" href="#">
+                        <h4>TITLE HERE</h4>
+                      </a>
+                      <p class="sup-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente vel quisquam.</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix branding planning">
-                <div class="portfolio-item">
-                  <div class="portfolio-img">
-                    <img src="{{ BASE_PATH }}/assets/images/portfolio/img2.jpg" alt="" />
-                  </div>
-                  <div class="portfoli-content">
-                    <div class="sup-desc-wrap">
-                      <div class="sup-desc-inner">
-                        <div class="sup-link">
-                          <a class="left-link" href="#"><i class="fa fa-link"></i></a>
-                          <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
-                        </div>
-                        <div class="sup-meta-wrap">
-                          <a class="sup-title" href="#">
-                            <h4>TITLE HERE</h4>
-                          </a>
-                          <p class="sup-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente vel quisquam.</p>
-                        </div>
-                      </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix branding planning">
+            <div class="portfolio-item">
+              <div class="portfolio-img">
+                <img src="{{ BASE_PATH }}/assets/images/portfolio/img2.jpg" alt="" />
+              </div>
+              <div class="portfoli-content">
+                <div class="sup-desc-wrap">
+                  <div class="sup-desc-inner">
+                    <div class="sup-link">
+                      <a class="left-link" href="#"><i class="fa fa-link"></i></a>
+                      <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
+                    </div>
+                    <div class="sup-meta-wrap">
+                      <a class="sup-title" href="#">
+                        <h4>TITLE HERE</h4>
+                      </a>
+                      <p class="sup-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente vel quisquam.</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix branding research">
-                <div class="portfolio-item">
-                  <div class="portfolio-img">
-                    <img src="{{ BASE_PATH }}/assets/images/portfolio/img3.jpg" alt="" />
-                  </div>
-                  <div class="portfoli-content">
-                    <div class="sup-desc-wrap">
-                      <div class="sup-desc-inner">
-                        <div class="sup-link">
-                          <a class="left-link" href="#"><i class="fa fa-link"></i></a>
-                          <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
-                        </div>
-                        <div class="sup-meta-wrap">
-                          <a class="sup-title" href="#">
-                            <h4>TITLE HERE</h4>
-                          </a>
-                          <p class="sup-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente vel quisquam.</p>
-                        </div>
-                      </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix branding research">
+            <div class="portfolio-item">
+              <div class="portfolio-img">
+                <img src="{{ BASE_PATH }}/assets/images/portfolio/img3.jpg" alt="" />
+              </div>
+              <div class="portfoli-content">
+                <div class="sup-desc-wrap">
+                  <div class="sup-desc-inner">
+                    <div class="sup-link">
+                      <a class="left-link" href="#"><i class="fa fa-link"></i></a>
+                      <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
+                    </div>
+                    <div class="sup-meta-wrap">
+                      <a class="sup-title" href="#">
+                        <h4>TITLE HERE</h4>
+                      </a>
+                      <p class="sup-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente vel quisquam.</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix marketing research">
-                <div class="portfolio-item">
-                  <div class="portfolio-img">
-                    <img src="{{ BASE_PATH }}/assets/images/portfolio/img4.jpg" alt="" />
-                  </div>
-                  <div class="portfoli-content">
-                    <div class="sup-desc-wrap">
-                      <div class="sup-desc-inner">
-                        <div class="sup-link">
-                          <a class="left-link" href="#"><i class="fa fa-link"></i></a>
-                          <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
-                        </div>
-                        <div class="sup-meta-wrap">
-                          <a class="sup-title" href="#">
-                            <h4>TITLE HERE</h4>
-                          </a>
-                          <p class="sup-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente vel quisquam.</p>
-                        </div>
-                      </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix marketing research">
+            <div class="portfolio-item">
+              <div class="portfolio-img">
+                <img src="{{ BASE_PATH }}/assets/images/portfolio/img4.jpg" alt="" />
+              </div>
+              <div class="portfoli-content">
+                <div class="sup-desc-wrap">
+                  <div class="sup-desc-inner">
+                    <div class="sup-link">
+                      <a class="left-link" href="#"><i class="fa fa-link"></i></a>
+                      <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
+                    </div>
+                    <div class="sup-meta-wrap">
+                      <a class="sup-title" href="#">
+                        <h4>TITLE HERE</h4>
+                      </a>
+                      <p class="sup-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente vel quisquam.</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix marketing planning">
-                <div class="portfolio-item">
-                  <div class="portfolio-img">
-                    <img src="{{ BASE_PATH }}/assets/images/portfolio/img5.jpg" alt="" />
-                  </div>
-                  <div class="portfoli-content">
-                    <div class="sup-desc-wrap">
-                      <div class="sup-desc-inner">
-                        <div class="sup-link">
-                          <a class="left-link" href="#"><i class="fa fa-link"></i></a>
-                          <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
-                        </div>
-                        <div class="sup-meta-wrap">
-                          <a class="sup-title" href="#">
-                            <h4>TITLE HERE</h4>
-                          </a>
-                          <p class="sup-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente vel quisquam.</p>
-                        </div>
-                      </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix marketing planning">
+            <div class="portfolio-item">
+              <div class="portfolio-img">
+                <img src="{{ BASE_PATH }}/assets/images/portfolio/img5.jpg" alt="" />
+              </div>
+              <div class="portfoli-content">
+                <div class="sup-desc-wrap">
+                  <div class="sup-desc-inner">
+                    <div class="sup-link">
+                      <a class="left-link" href="#"><i class="fa fa-link"></i></a>
+                      <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
+                    </div>
+                    <div class="sup-meta-wrap">
+                      <a class="sup-title" href="#">
+                        <h4>TITLE HERE</h4>
+                      </a>
+                      <p class="sup-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente vel quisquam.</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix planning research">
-                <div class="portfolio-item">
-                  <div class="portfolio-img">
-                    <img src="{{ BASE_PATH }}/assets/images/portfolio/img6.jpg" alt="" />
-                  </div>
-                  <div class="portfoli-content">
-                    <div class="sup-desc-wrap">
-                      <div class="sup-desc-inner">
-                        <div class="sup-link">
-                          <a class="left-link" href="#"><i class="fa fa-link"></i></a>
-                          <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
-                        </div>
-                        <div class="sup-meta-wrap">
-                          <a class="sup-title" href="#">
-                            <h4>TITLE HERE</h4>
-                          </a>
-                          <p class="sup-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente vel quisquam.</p>
-                        </div>
-                      </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix planning research">
+            <div class="portfolio-item">
+              <div class="portfolio-img">
+                <img src="{{ BASE_PATH }}/assets/images/portfolio/img6.jpg" alt="" />
+              </div>
+              <div class="portfoli-content">
+                <div class="sup-desc-wrap">
+                  <div class="sup-desc-inner">
+                    <div class="sup-link">
+                      <a class="left-link" href="#"><i class="fa fa-link"></i></a>
+                      <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
+                    </div>
+                    <div class="sup-meta-wrap">
+                      <a class="sup-title" href="#">
+                        <h4>TITLE HERE</h4>
+                      </a>
+                      <p class="sup-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente vel quisquam.</p>
                     </div>
                   </div>
                 </div>
@@ -269,6 +213,225 @@ canonical: https://gnanasangama.github.io
             </div>
           </div>
         </div>
-        <!-- Container Ends -->
-      </section>
-      <!-- Portfolio Section Ends -->
+      </div>
+                  </div>
+                  <div class="tab-pane" id="hindi" role="tabpanel">
+                    <p>Hindi</p>
+                    <div class="sub-title">
+        <span>Portfolio Style #1</span>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Portfolio Controller/Buttons -->
+          <div class="controls text-center wow fadeInUpQuick" data-wow-delay=".6s">
+            <a class="filter active btn btn-common" data-filter="all">
+              All 
+            </a>
+            <a class="filter btn btn-common" data-filter=".desha">
+              Branding 
+            </a>
+            <a class="filter btn btn-common" data-filter=".bhavageethe">
+              Marketing
+            </a>
+            <a class="filter btn btn-common" data-filter=".sangha">
+              Planning 
+            </a>
+            <a class="filter btn btn-common" data-filter=".rakshabandhana">
+              Research 
+            </a>
+          </div>
+          <!-- Portfolio Controller/Buttons Ends-->
+        </div>
+
+        <!-- Portfolio Recent Projects -->
+        <div id="portfolio" class="row wow fadeInUpQuick" data-wow-delay="0.8s">
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix marketing planning">
+            <div class="portfolio-item">
+              <div class="portfolio-img">
+                <img src="{{ BASE_PATH }}/assets/images/portfolio/img1.jpg" alt="" />
+              </div>
+              <div class="portfoli-content">
+                <div class="sup-desc-wrap">
+                  <div class="sup-desc-inner">
+                    <div class="sup-link">
+                      <a class="left-link" href="#"><i class="fa fa-link"></i></a>
+                      <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
+                    </div>
+                    <div class="sup-meta-wrap">
+                      <a class="sup-title" href="#">
+                        <h4>TITLE HERE</h4>
+                      </a>
+                      <p class="sup-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente vel quisquam.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix branding planning">
+            <div class="portfolio-item">
+              <div class="portfolio-img">
+                <img src="{{ BASE_PATH }}/assets/images/portfolio/img2.jpg" alt="" />
+              </div>
+              <div class="portfoli-content">
+                <div class="sup-desc-wrap">
+                  <div class="sup-desc-inner">
+                    <div class="sup-link">
+                      <a class="left-link" href="#"><i class="fa fa-link"></i></a>
+                      <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
+                    </div>
+                    <div class="sup-meta-wrap">
+                      <a class="sup-title" href="#">
+                        <h4>TITLE HERE</h4>
+                      </a>
+                      <p class="sup-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente vel quisquam.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix branding research">
+            <div class="portfolio-item">
+              <div class="portfolio-img">
+                <img src="{{ BASE_PATH }}/assets/images/portfolio/img3.jpg" alt="" />
+              </div>
+              <div class="portfoli-content">
+                <div class="sup-desc-wrap">
+                  <div class="sup-desc-inner">
+                    <div class="sup-link">
+                      <a class="left-link" href="#"><i class="fa fa-link"></i></a>
+                      <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
+                    </div>
+                    <div class="sup-meta-wrap">
+                      <a class="sup-title" href="#">
+                        <h4>TITLE HERE</h4>
+                      </a>
+                      <p class="sup-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente vel quisquam.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix marketing research">
+            <div class="portfolio-item">
+              <div class="portfolio-img">
+                <img src="{{ BASE_PATH }}/assets/images/portfolio/img4.jpg" alt="" />
+              </div>
+              <div class="portfoli-content">
+                <div class="sup-desc-wrap">
+                  <div class="sup-desc-inner">
+                    <div class="sup-link">
+                      <a class="left-link" href="#"><i class="fa fa-link"></i></a>
+                      <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
+                    </div>
+                    <div class="sup-meta-wrap">
+                      <a class="sup-title" href="#">
+                        <h4>TITLE HERE</h4>
+                      </a>
+                      <p class="sup-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente vel quisquam.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix marketing planning">
+            <div class="portfolio-item">
+              <div class="portfolio-img">
+                <img src="{{ BASE_PATH }}/assets/images/portfolio/img5.jpg" alt="" />
+              </div>
+              <div class="portfoli-content">
+                <div class="sup-desc-wrap">
+                  <div class="sup-desc-inner">
+                    <div class="sup-link">
+                      <a class="left-link" href="#"><i class="fa fa-link"></i></a>
+                      <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
+                    </div>
+                    <div class="sup-meta-wrap">
+                      <a class="sup-title" href="#">
+                        <h4>TITLE HERE</h4>
+                      </a>
+                      <p class="sup-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente vel quisquam.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix planning research">
+            <div class="portfolio-item">
+              <div class="portfolio-img">
+                <img src="{{ BASE_PATH }}/assets/images/portfolio/img6.jpg" alt="" />
+              </div>
+              <div class="portfoli-content">
+                <div class="sup-desc-wrap">
+                  <div class="sup-desc-inner">
+                    <div class="sup-link">
+                      <a class="left-link" href="#"><i class="fa fa-link"></i></a>
+                      <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
+                    </div>
+                    <div class="sup-meta-wrap">
+                      <a class="sup-title" href="#">
+                        <h4>TITLE HERE</h4>
+                      </a>
+                      <p class="sup-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente vel quisquam.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Type tabs-accordions -->
+      <div class="tabs-accordions">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="page-header-title">
+                <h2 class="heading-title text-center"><b>ಗೀತೆ</b></h2>
+              </div>
+            </div>
+          </div>
+      <!-- accordions -->
+      <div class="row">
+  {% for post in site.vishaya %}
+  {% if post.category == "geethe" %}
+        <div class="col-sm-6">
+          <div class="panel-group tabbed">
+            <div class="panel">
+              <div class="panel-heading">
+                <a class="panel-title collapsed" data-toggle="collapse" href="#{{ post.category }}">{{ post.title }}</a>
+              </div>
+              <div id="{{ post.category }}" class="panel-collapse collapse">
+                <div class="panel-body text-gray">
+                	<ul>
+        		{% for content in post.contents %}
+                  <li>{{ content.c }}</li><hr>
+        		{% endfor %}
+        	        </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  {% endif %}
+  {% endfor %}
+      </div>
+        </div>
+  </div>
+  <!-- tabs-accordions -->
+      
+    </div>
+    <!-- Container Ends -->
+  </section>
+  <!-- Portfolio Section Ends -->
