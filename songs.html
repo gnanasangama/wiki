@@ -1,0 +1,49 @@
+---
+layout: index
+title: ಅಮೃತವಚನ
+---
+{% include JB/setup %}
+    <!-- Content Area Start -->
+<div id="content" style="padding-top:10vh;">
+      <!-- tabs-accordions -->
+      <div class="tabs-accordions">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="page-header-title">
+		      <h2 class="heading-title text-center"><b>ಗೀತೆ</b></h2>
+              </div>
+            </div>
+          </div>
+          <div class="sub-title">
+            <span></span>
+          </div>
+          <!-- accordions -->
+          <div class="row">
+			{% for post in site.vishaya %}
+			{% if post.category == "geethe" %}
+            <div class="col-sm-6">
+              <div class="panel-group tabbed">
+                <div class="panel">
+                  <div class="panel-heading">
+                    <a class="panel-title collapsed" data-toggle="collapse" href="#{{ post.category }}">{{ post.title }}</a>
+                  </div>
+                  <div id="{{ post.pid }}" class="panel-collapse collapse">
+                    <div class="panel-body text-gray">
+                    	<ul>
+            		{% for content in post.contents %}
+                      <li>{{ content.c }}</li><hr>
+            		{% endfor %}
+            	        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+			{% endif %}
+			{% endfor %}
+          </div>
+            </div>
+      </div>
+      <!-- tabs-accordions -->
+    </div>
