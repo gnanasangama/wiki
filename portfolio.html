@@ -23,7 +23,7 @@ canonical: https://gnanasangama.github.io
     </div>
   </div>
 <!-- Portfolio Section -->
-  <section id="portfolio" class="section">
+  <section class="section">
     <!-- Language Container Starts -->
     <div class="container">
       <div class="tabs-accordions">
@@ -66,7 +66,7 @@ canonical: https://gnanasangama.github.io
                       </div>
 
                       <!-- Portfolio Recent Projects -->
-                      <div id="portfolio" class="row wow fadeInUpQuick" data-wow-delay="0.8s">
+                      <div id="portfolio1" class="row wow fadeInUpQuick" data-wow-delay="0.8s">
                         {% for post in site.vishaya %}
                         {% if post.language == "kannada" %}
                         {% for content in post.contents %}
@@ -92,6 +92,7 @@ canonical: https://gnanasangama.github.io
                       </div>
                     </div>
                   </div>
+
                   <div class="tab-pane active" id="hindi" role="tabpanel">
                     <div class="sub-title">
                       <span>ಹಿಂದಿ ಗೀತೆಗಳು</span>
@@ -105,7 +106,7 @@ canonical: https://gnanasangama.github.io
                           </a>
                           {% for post in site.vishaya %}
                           {% if post.language == "hindi" %}
-                            <a class="filter btn btn-common" data-filter=".{{ post.tid }}">
+                            <a class="filter btn btn-common" data-filter=".{{ post.language }}-{{ post.tid }}">
                               {{ post.title }} 
                             </a>
                           {% endif %}
@@ -114,11 +115,11 @@ canonical: https://gnanasangama.github.io
                       </div>
 
                       <!-- Portfolio Recent Projects -->
-                      <div id="portfolio" class="row wow fadeInUpQuick" data-wow-delay="0.8s">
+                      <div id="portfolio2" class="row wow fadeInUpQuick" data-wow-delay="0.8s">
                         {% for post in site.vishaya %}
                         {% if post.language == "hindi" %}
                         {% for content in post.contents %}
-                          <div class="col-sm-6 mix {{ post.tid }}">
+                          <div class="col-sm-6 mix {{ post.language }}-{{ post.tid }}">
                             <div class="panel-group tabbed">
                               <div class="panel">
                                 <div class="panel-heading">
