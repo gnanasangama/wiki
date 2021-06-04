@@ -1,7 +1,7 @@
 ---
 layout: category2
 title: ಭಾವ ಗೀತೆ
-tid: bhava-bhakti
+tid: bhava-geethe
 language: kannada
 category: geethe
 contents:
