@@ -57,7 +57,7 @@ canonical: https://gnanasangama.github.io
                           </a>
                           {% for post in site.vishaya %}
                           {% if post.language == "kannada" %}
-                            <a class="filter btn btn-common" data-filter=".{{ post.tid }}">
+                            <a class="filter btn btn-common" data-filter=".{{ post.language }}-{{ post.tid }}">
                               {{ post.title }} 
                             </a>
                           {% endif %}
@@ -70,7 +70,7 @@ canonical: https://gnanasangama.github.io
                         {% for post in site.vishaya %}
                         {% if post.language == "kannada" %}
                         {% for content in post.contents %}
-                          <div class="col-sm-6 mix {{ post.tid }}">
+                          <div class="col-sm-6 mix {{ post.language }}-{{ post.tid }}">
                             <div class="panel-group tabbed">
                               <div class="panel">
                                 <div class="panel-heading">
