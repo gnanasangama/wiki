@@ -49,102 +49,49 @@ canonical: https://gnanasangama.github.io
                     <div class="sub-title">
         <span>ಕನ್ನಡ ಗೀತೆಗಳು</span>
       </div>
-                      <div class="row">
-  {% for post in site.vishaya %}
-  {% if post.language == "kannada" %}
-        <div class="col-sm-6">
-          <div class="panel-group tabbed">
-            <div class="panel">
-              <div class="panel-heading">
-                <a class="panel-title collapsed" data-toggle="collapse" href="#{{ post.category }}">{{ post.title }}</a>
-              </div>
-              <div id="{{ post.category }}" class="panel-collapse collapse">
-                <div class="panel-body text-gray">
-                	<ul>
-        		{% for content in post.contents %}
-                  <li>{{ content.c }}</li><hr>
-        		{% endfor %}
-        	        </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-  {% endif %}
-  {% endfor %}
-      </div>
       <div class="row">
         <div class="col-md-12">
           <!-- Portfolio Controller/Buttons -->
           <div class="controls text-center wow fadeInUpQuick" data-wow-delay=".6s">
             <a class="filter active btn btn-common" data-filter="all">
-              All 
+              ಎಲ್ಲ ಗೀತೆಗಳು 
             </a>
-            <a class="filter btn btn-common" data-filter=".desha">
-              Branding 
-            </a>
-            <a class="filter btn btn-common" data-filter=".bhavageethe">
-              Marketing
-            </a>
-            <a class="filter btn btn-common" data-filter=".sangha">
-              Planning 
-            </a>
-            <a class="filter btn btn-common" data-filter=".rakshabandhana">
-              Research 
-            </a>
+            {% for post in site.vishaya %}
+            {% if post.language == "kannada" %}
+              <a class="filter btn btn-common" data-filter=".{{ post.tid }}">
+                {{ post.title }} 
+              </a>
+            {% endif %}
+            {% endfor %}
           </div>
           <!-- Portfolio Controller/Buttons Ends-->
         </div>
 
         <!-- Portfolio Recent Projects -->
         <div id="portfolio" class="row wow fadeInUpQuick" data-wow-delay="0.8s">
-          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix marketing planning">
-            <div class="portfolio-item">
-              <div class="portfolio-img">
-                <img src="{{ BASE_PATH }}/assets/images/portfolio/img1.jpg" alt="" />
-              </div>
-              <div class="portfoli-content">
-                <div class="sup-desc-wrap">
-                  <div class="sup-desc-inner">
-                    <div class="sup-link">
-                      <a class="left-link" href="#"><i class="fa fa-link"></i></a>
-                      <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
-                    </div>
-                    <div class="sup-meta-wrap">
-                      <a class="sup-title" href="#">
-                        <h4>TITLE HERE</h4>
-                      </a>
-                      <p class="sup-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente vel quisquam.</p>
+          {% for post in site.vishaya %}
+          {% if post.language == "kannada" %}
+          {% for content in post.contents %}
+            <div class="col-sm-6 mix {{ post.tid }}">
+              <div class="panel-group tabbed">
+                <div class="panel">
+                  <div class="panel-heading">
+                    <a class="panel-title collapsed" data-toggle="collapse" href="#{{ post.category }}">{{ content.t }}</a>
+                  </div>
+                  <div id="{{ post.category }}" class="panel-collapse collapse">
+                    <div class="panel-body text-gray">
+                      <ul>
+                      <li>{{ content.c }}</li><hr>
+                      </ul>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-
-  {% for post in site.vishaya %}
-  {% if post.language == "kannada" %}
-        <div class="col-sm-6 mix branding sangha">
-          <div class="panel-group tabbed">
-            <div class="panel">
-              <div class="panel-heading">
-                <a class="panel-title collapsed" data-toggle="collapse" href="#{{ post.category }}">{{ post.title }}</a>
-              </div>
-              <div id="{{ post.category }}" class="panel-collapse collapse">
-                <div class="panel-body text-gray">
-                  <ul>
-            {% for content in post.contents %}
-                  <li>{{ content.c }}</li><hr>
-            {% endfor %}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-  {% endif %}
-  {% endfor %}
-          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix branding research">
+          {% endfor %}
+          {% endif %}
+          {% endfor %}
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix desha-bhakti">
             <div class="portfolio-item">
               <div class="portfolio-img">
                 <img src="{{ BASE_PATH }}/assets/images/portfolio/img3.jpg" alt="" />
@@ -167,7 +114,7 @@ canonical: https://gnanasangama.github.io
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix marketing research">
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix desha-bhakti">
             <div class="portfolio-item">
               <div class="portfolio-img">
                 <img src="{{ BASE_PATH }}/assets/images/portfolio/img4.jpg" alt="" />
@@ -190,7 +137,7 @@ canonical: https://gnanasangama.github.io
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix marketing planning">
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix others">
             <div class="portfolio-item">
               <div class="portfolio-img">
                 <img src="{{ BASE_PATH }}/assets/images/portfolio/img5.jpg" alt="" />
@@ -213,7 +160,7 @@ canonical: https://gnanasangama.github.io
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix planning research">
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix bhava-geethe">
             <div class="portfolio-item">
               <div class="portfolio-img">
                 <img src="{{ BASE_PATH }}/assets/images/portfolio/img6.jpg" alt="" />
