@@ -1,11 +1,11 @@
 ---
 layout: category2
+title: ಭಾವ ಗೀತೆ
+tid: bhava-bhakti
 language: kannada
 category: geethe
 contents:
-  - stype: ದೇಶಭಕ್ತಿ ಗೀತೆ
-  - stype: ಭಾವಗೀತೆ
-  - stype: ರಕ್ಷಾಬಂಧನ
+  - id: 10
     t: >-
      ವಂದೇ ಮಾತರಂ
     c: >- 

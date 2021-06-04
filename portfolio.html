@@ -47,7 +47,7 @@ canonical: https://gnanasangama.github.io
                   <div class="tab-pane active" id="kannada" role="tabpanel">
                     <p>Kannada</p>
                     <div class="sub-title">
-        <span>Portfolio Style #1</span>
+        <span>ಕನ್ನಡ ಗೀತೆಗಳು</span>
       </div>
                       <div class="row">
   {% for post in site.vishaya %}
@@ -121,29 +121,29 @@ canonical: https://gnanasangama.github.io
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix branding planning">
-            <div class="portfolio-item">
-              <div class="portfolio-img">
-                <img src="{{ BASE_PATH }}/assets/images/portfolio/img2.jpg" alt="" />
+
+  {% for post in site.vishaya %}
+  {% if post.language == "kannada" %}
+        <div class="col-sm-6 mix branding sangha">
+          <div class="panel-group tabbed">
+            <div class="panel">
+              <div class="panel-heading">
+                <a class="panel-title collapsed" data-toggle="collapse" href="#{{ post.category }}">{{ post.title }}</a>
               </div>
-              <div class="portfoli-content">
-                <div class="sup-desc-wrap">
-                  <div class="sup-desc-inner">
-                    <div class="sup-link">
-                      <a class="left-link" href="#"><i class="fa fa-link"></i></a>
-                      <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
-                    </div>
-                    <div class="sup-meta-wrap">
-                      <a class="sup-title" href="#">
-                        <h4>TITLE HERE</h4>
-                      </a>
-                      <p class="sup-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente vel quisquam.</p>
-                    </div>
-                  </div>
+              <div id="{{ post.category }}" class="panel-collapse collapse">
+                <div class="panel-body text-gray">
+                  <ul>
+            {% for content in post.contents %}
+                  <li>{{ content.c }}</li><hr>
+            {% endfor %}
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+  {% endif %}
+  {% endfor %}
           <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix branding research">
             <div class="portfolio-item">
               <div class="portfolio-img">
@@ -242,7 +242,7 @@ canonical: https://gnanasangama.github.io
                   <div class="tab-pane" id="hindi" role="tabpanel">
                     <p>Hindi</p>
                     <div class="sub-title">
-        <span>Portfolio Style #1</span>
+        <span>ಹಿಂದಿ ಗೀತೆಗಳು</span>
       </div>
       <div class="row">
         <div class="col-md-12">
