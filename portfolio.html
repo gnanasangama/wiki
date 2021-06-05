@@ -31,23 +31,6 @@ canonical: https://gnanasangama.github.io
           <div class="row">
             <!-- tabs 1 -->
             <div class="col-12" style="margin-bottom:10px;">
-              <div id="round-tab">
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#kannada" role="tab">ಕನ್ನಡ</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#hindi" role="tab">हिंदी</a>
-                  </li>
-                </ul>
-
-                <!-- Tab panes -->
-                <div class="tab-content">
-                  <div class="tab-pane active" id="kannada" role="tabpanel">
-                    <div class="sub-title">
-                      <span>ಕನ್ನಡ ಗೀತೆಗಳು</span>
-                    </div>
                     <div class="row">
                       <div class="col-md-12">
                         <!-- Portfolio Controller/Buttons -->
@@ -62,6 +45,7 @@ canonical: https://gnanasangama.github.io
                             </a>
                           {% endif %}
                           {% endfor %}
+                            <a class="filter active btn btn-common" data-filter=".hindi">हिंदी</a>
                         </div>
                       </div>
 
@@ -89,33 +73,8 @@ canonical: https://gnanasangama.github.io
                         {% endfor %}
                         {% endif %}
                         {% endfor %}
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="tab-pane active" id="hindi" role="tabpanel">
-                    <div class="sub-title">
-                      <span>ಹಿಂದಿ ಗೀತೆಗಳು</span>
-                    </div>
-                    <div class="row">
-<!--                       <div class="col-md-12">
-                        <div class="controls text-center wow fadeInUpQuick" data-wow-delay=".6s">
-                          <a class="filter active btn btn-common" data-filter="all">
-                            ಎಲ್ಲ ಗೀತೆಗಳು 
-                          </a>
+                          
                           {% for post in site.vishaya %}
-                          {% if post.language == "hindi" %}
-                            <a class="filter btn btn-common" data-filter=".{{ post.language }}-{{ post.tid }}">
-                              {{ post.title }} 
-                            </a>
-                          {% endif %}
-                          {% endfor %}
-                        </div>
-                      </div> -->
-
-                      <!-- Portfolio Recent Projects -->
-<!--                       <div id="portfolio" class="row wow fadeInUpQuick" data-wow-delay="0.8s"> -->
-                        {% for post in site.vishaya %}
                         {% if post.language == "hindi" %}
                         {% for content in post.contents %}
                           <div class="col-sm-6 mix {{ post.language }}-{{ post.tid }}">
@@ -137,10 +96,8 @@ canonical: https://gnanasangama.github.io
                         {% endfor %}
                         {% endif %}
                         {% endfor %}
-<!--                       </div> -->
+                      </div>
                     </div>
-                  </div>
-                  </div>
                 </div>
               </div>
             </div>
