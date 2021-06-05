@@ -77,7 +77,7 @@ canonical: https://gnanasangama.github.io
                           {% for post in site.vishaya %}
                         {% if post.language == "hindi" %}
                         {% for content in post.contents %}
-                          <div class="col-sm-6 mix {{ post.language }}-{{ post.tid }}">
+                          <div class="col-sm-6 mix {{ post.language }}">
                             <div class="panel-group tabbed">
                               <div class="panel">
                                 <div class="panel-heading">
@@ -97,7 +97,6 @@ canonical: https://gnanasangama.github.io
                         {% endif %}
                         {% endfor %}
                       </div>
-                    </div>
                 </div>
               </div>
             </div>
