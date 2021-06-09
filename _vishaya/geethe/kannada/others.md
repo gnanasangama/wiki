@@ -6,6 +6,7 @@ language: kannada
 category: geethe
 contents:
   - id: 04
+    yt-link: mkoj1q0cdAg
     t: >-
      ಎಲ್ಲಾ ಭೇದ ಮರೆತು
     c: >- 
@@ -84,6 +85,7 @@ contents:
      ದೇಶಪ್ರೇಮವನೆರೆದು ಧ್ಯೇಯನಿಷ್ಠೆಯ ಬೆಳೆದು<br>
      ಆ ತಾಯಿ ಭಾರತಿಯ ವರಪುತ್ರ ನೀನಾದೆ || 3 ||
   - id: 01
+    yt-link: R-ofpDZ6txs
     t: >-
      ಸೇವೆಯೆಂಬ ಯಜ್ಞದಲ್ಲಿ ಸಮಿಧೆಯಂಥೆ ಉರಿಯುವಾ
     c: >- 
