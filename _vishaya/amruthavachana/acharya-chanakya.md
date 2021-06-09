@@ -1,6 +1,6 @@
 ---
 layout: category2
-title: ಚಾಣಕ್ಯ
+title: ಆಚಾರ್ಯ ಚಾಣಕ್ಯ
 img: true
 pid: acharya-chanakya
 category: amruthavachana
