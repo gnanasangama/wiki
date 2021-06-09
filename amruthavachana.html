@@ -22,11 +22,11 @@ title: ಅಮೃತವಚನ
           <div class="row">
 			{% for post in site.vishaya %}
 			{% if post.category == "amruthavachana" %}
+			  {% if post.img %}
             <div class="col-sm-6">
               <div class="panel-group tabbed">
                 <div class="panel">
                   <div class="panel-heading text-center">
-			  {% if post.img %}
 			  <div class="team-item">
 				<figure class="team-profile">
 						<img alt="{{ post.title }}" src="https://gnanasangama.github.io/assets/images/amruthavachana/{{ post.pid }}.jpg">
@@ -39,7 +39,6 @@ title: ಅಮೃತವಚನ
 				</figure>
 			</div>
 			<hr>
-			{% endif %}
                     	<a class="panel-title collapsed" data-toggle="collapse" href="#{{ post.pid }}">{{ post.title }}</a>
                   </div>
                   <div id="{{ post.pid }}" class="panel-collapse collapse">
@@ -54,6 +53,46 @@ title: ಅಮೃತವಚನ
                 </div>
               </div>
             </div>
+			{% endif %}
+			{% endif %}
+			{% endfor %}
+		  
+			{% for post in site.vishaya %}
+			{% if post.category == "amruthavachana" %}
+			  {% if post.img %}
+		  
+			  {% else %}
+            <div class="col-sm-6">
+              <div class="panel-group tabbed">
+                <div class="panel">
+                  <div class="panel-heading text-center">
+			  <div class="team-item">
+				<figure class="team-profile">
+						<img alt="{{ post.title }}" src="https://gnanasangama.github.io/assets/images/amruthavachana/{{ post.pid }}.jpg">
+					<figcaption class="our-team">
+						<div class="details" style="top:15%;">
+							<p class="content-white">{{ post.description }}</p>
+							<hr class="small-divider border-white">
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+			<hr>
+                    	<a class="panel-title collapsed" data-toggle="collapse" href="#{{ post.pid }}">{{ post.title }}</a>
+                  </div>
+                  <div id="{{ post.pid }}" class="panel-collapse collapse">
+                    <div class="panel-body text-gray">
+                    	<ul>
+            		{% for content in post.contents %}
+                      <li>{{ content.c }}</li><hr>
+            		{% endfor %}
+            	</ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+			{% endif %}
 			{% endif %}
 			{% endfor %}
           </div>
