@@ -2,6 +2,7 @@
 layout: category2
 title: ಸ್ವಾಮಿ ಚಿನ್ಮಯಾನಂದ
 pid: swami-chinmayananda
+img: true
 category: amruthavachana
 contents:
   - c: >- 

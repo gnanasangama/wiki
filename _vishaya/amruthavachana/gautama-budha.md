@@ -2,6 +2,7 @@
 layout: category2
 title: ಗೌತಮ ಬುದ್ಧ
 pid: gautama-budha
+img: true
 category: amruthavachana
 contents:
   - c: >- 

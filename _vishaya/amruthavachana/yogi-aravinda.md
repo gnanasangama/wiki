@@ -2,6 +2,7 @@
 layout: category2
 title: ಯೋಗಿ ಅರವಿಂದ
 pid: yogi-aravinda
+img: true
 category: amruthavachana
 contents:
   - c: >- 

@@ -2,6 +2,7 @@
 layout: category2
 title: ದತ್ತೋಪಂತ ಠೇಂಗಡಿ
 pid: dathopant-tengadi
+img: true
 category: amruthavachana
 contents:
   - c: >- 

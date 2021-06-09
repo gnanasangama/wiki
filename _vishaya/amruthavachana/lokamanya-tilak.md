@@ -2,6 +2,7 @@
 layout: category2
 title: ಲೋಕಮಾನ್ಯ ತಿಲಕ್
 pid: lokamanya-tilak
+img: true
 category: amruthavachana
 contents:
   - c: >- 

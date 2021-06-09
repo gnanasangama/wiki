@@ -2,6 +2,7 @@
 layout: category2
 title: ಡಾ.ಕೇಶವ ಬಲಿರಾಂ ಹೆಡಗೆವಾರ್ (ಡಾಕ್ಟರ್ ಜಿ)
 pid: keshava-baliram-hedgewar
+img: true
 category: amruthavachana
 contents:
   - c: >- 

@@ -2,6 +2,7 @@
 layout: category2
 title: ಮಹಾತ್ಮ ಗಾಂಧಿ
 pid: mahatma-gandhi
+img: true
 category: amruthavachana
 contents:
   - c: >- 
