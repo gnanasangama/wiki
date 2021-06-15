@@ -23,7 +23,7 @@ defaults:
       path: "_posts/blog"
       type: posts
     values:
-      permalink: /:categories/:year/:month/:day/:title
+      permalink: /:categories/:basename/:year/:month/:day/:title
 
 #Google Ad Words Data from scripts code (using Google responsive options) and ad client
 data-ad-slot: 
