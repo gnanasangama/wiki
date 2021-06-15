@@ -20,6 +20,7 @@ collections:
 defaults:
   # blog
   - scope:
+      path: "_posts/blog/"
       type: posts
     values:
       permalink: /:categories/:basename/:year/:month/:day/:title
