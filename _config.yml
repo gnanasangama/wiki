@@ -18,7 +18,7 @@ collections:
      permalink: /:path/
    posts:
      output: true
-     permalink: /:categories/:basename/:year/:month/:day/:title
+     permalink: /:path/:categories/:year/:month/:day/:title
 
 # defaults:
 #   # blog
