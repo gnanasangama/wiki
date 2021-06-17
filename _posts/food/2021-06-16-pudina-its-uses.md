@@ -1,6 +1,8 @@
 ---
 layout: post
 category: blog
+tags: food, health, ayurvedic
+keywords: food, pudina, health, ayurvedic, vegetable, uses
 img: pudina
 tagline: >-
   ಪುದಿನ ಮತ್ತು ಆದರಿಂದಾಗುವ 13 ಆರೋಗ್ಯ ಲಾಭಗಳ ಬಗ್ಗೆ ತಿಳಿಯೋಣ.
