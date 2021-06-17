@@ -1,7 +1,7 @@
 ---
 layout: post
 category: blog
-tags: food, health, ayurvedic
+tags: [food, health, ayurvedic]
 keywords: food, pudina, health, ayurvedic, vegetable, uses
 img: pudina
 tagline: >-
