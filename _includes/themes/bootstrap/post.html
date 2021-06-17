@@ -36,6 +36,11 @@
           <div class="mb-60"></div>
            <p>{{ content }}<p>
           {% include social-share.html %}
+              <ul class="nav nav-pills">
+  {% assign tags_list = site.tags %}
+  {% include JB/tags_list %}
+</ul>
+
           <div class="mb-60"></div>
           {% include ads-block.html %}
           <div class="mb-60"></div> 
