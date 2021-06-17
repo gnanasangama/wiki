@@ -9,6 +9,10 @@
           </div>
         </div>
         <div class="row col-sm-12 col-md-9">
+<ul class="nav nav-pills">
+  {% assign tags_list = site.tags %}
+  {% include JB/tags_list %}
+</ul>
 
            {{ content }}               
 
