@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{ page.title }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     {% if page.tagline %}<meta name="description" content="{{ page.tagline }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">    
     {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
@@ -31,7 +32,7 @@
         {% if page.css %}<link rel="stylesheet" type="text/css" href="{{ BASE_PATH }}/assets/css/custom/{{ page.css }}" />{% endif %}
 
     <meta property="og:title" content="{{ page.title }}">
-    <meta property="og:description" content="{{ page.tagline }}">
+    <meta property="og:description" content="{{ page.description }}">
     <meta property="og:image" content="{{ BASE_PATH }}/assets/img/big/{{ page.img }}">
     <meta property="og:url" content="{{ BASE_PATH }}">
     <meta name="twitter:card" content="summary_large_image">
