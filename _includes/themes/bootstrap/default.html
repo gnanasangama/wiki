@@ -34,7 +34,9 @@
     <meta property="og:title" content="{{ page.title }}">
     <meta property="og:description" content="{{ page.description }}">
     <meta property="og:image" content="{{ BASE_PATH }}/assets/img/big/{{ page.img }}">
-    <meta property="og:url" content="{{ BASE_PATH }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:image" content="{{ site.url }}/thumbs/{{ page.image }}" />
+<meta property="og:site_name" content="{{ site.title }}">
     <meta name="twitter:card" content="summary_large_image">
 
 	<!--[if IE]>
