@@ -1,6 +1,7 @@
 ---
 layout: category2
 title: ಅನ್ಯ ವಿದೇಶಿ ಚಿಂತಕರು
+pid: others2
 img: false
 category: amruthavachana
 contents:
