@@ -6,7 +6,7 @@ language: kannada
 category: geethe
 contents:
   - id: 01
-    yt-link: qTCm3IOZ2wo
+    yt-link: REPi6zbpRlw
     t: >-
      ಆರದಿಹ ಆದರ್ಶ ಜ್ವಾಲೆಯ
     c: >-
